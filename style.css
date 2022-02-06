@@ -1,0 +1,101 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--clr-primary-grayish-blue:  hsl(237, 18%, 59%);
+	--clr-primary-soft-red:  hsl(345, 95%, 68%);
+	--clr-white:  hsl(0, 0%, 100%);
+	--clr-desatured-blue: hsl(236, 21%, 26%) ;
+	--clr-dark-blue:  hsl(235, 16%, 14%);
+	--clr-dark-mostly-black-blue: hsl(234, 17%, 12%) ;
+}
+
+html {
+	font-size: 62.5%;
+}
+body {
+	font-family: 'Red Hat Text', sans-serif;
+	font-size: 1.4rem;
+	/*height: 100vh;*/
+	text-align: center;
+	background-color: var(--clr-dark-mostly-black-blue);
+	width: 100%;
+}
+.flex {
+	display: flex;
+}
+.main-heading {
+	color: var(--clr-white);
+	margin:5rem 0 10rem 0;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-size: 2.5rem;
+	font-weight: 500;
+}
+.timer-format {
+	color: var(--clr-primary-soft-red);
+	background-color: var(--clr-desatured-blue);
+	height: 14rem;
+	width: 14rem;
+	clip-path: polygon(5% 0, 95% 0,100% 5%, 100% 40%, 95% 50%, 100% 60%, 100% 95%, 95% 100%, 5% 100%,0% 95%, 0 60%, 5% 50%, 0 40%, 0 5%);
+}
+h2 {
+	padding:  2.5rem 0 0 0 ;
+	font-size: 7rem;
+	margin-bottom: 4rem;
+	text-align: center;
+}
+p{
+	color: var(--clr-primary-grayish-blue);
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+.timer-container {
+	align-items: center;
+	justify-content: center;
+	gap: 3rem;
+	margin-bottom: 5rem;
+}
+.footer {
+	justify-content: center;
+	align-items: center;
+	margin-top: 15rem;
+	background-image: url(./images/bg-stars.svg), url(./images/pattern-hills.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	height: 20rem;
+}
+.icon-section {
+	padding: 4rem 0 0 0;
+	gap: 2rem;
+}
+.social-icon:hover path{
+	fill: var(--clr-primary-soft-red);
+	cursor: pointer;
+}
+.attribution { 
+ 	font-size: 11px; 
+ 	text-align: center; 
+}
+.attribution a { 
+ 	color: hsl(228, 45%, 44%); 
+}
+ 
+ @media only screen and (max-width: 37.5em){
+ 	html {
+ 		font-size: 40%;
+ 	}
+ 	body {
+ 		width: 375px;
+ 	}
+ 	.timer-container {
+ 		padding: 1rem;
+ 	}
+ 	.main-heading {
+ 		width: 70%;
+ 		margin: 15rem auto;
+ 	}
+ }
